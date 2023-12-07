@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Tailwind CSS-Framework -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;600;800&family=Sacramento&display=swap" rel="stylesheet">
+    <style>
+        * {font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif;}
+    </style>
+</head>
+<body>
+    <nav class="bg-[#00000033] flex flex-row h-16">
+        <section class="flex flex-row flex-1 items-center justify-center">
+            <ul class="flex flex-row gap-16">
+                <li class="flex flex-row"><a class="flex flex-row gap-3" href="">
+                    <div><img src="./assets/icon/coffee-white-icon.svg" alt=""></div>
+                    <span style="font-family: 'Sacramento', Arial, Helvetica, sans-serif; " class="text-white text-lg">Coffee Shop</span>
+                </a></li>
+                <li class="text-white text-sm">Home</li>
+                <li class="text-white text-sm">Product</li>
+            </ul>
+        </section>
+        <section class="flex flex-row flex-1 items-center justify-center">
+            <ul class="flex flex-row gap-6 items-center">
+                <li><i class="text-white" data-feather="search"></i></li>
+                <li><i class="text-white" data-feather="shopping-cart"></i></li>
+                <li class="text-white text-sm px-5 py-3 box-border border border-white rounded-md">Sign In</li>
+                <li class="text-black text-sm px-5 py-3 box-border border border-orange-500 bg-orange-500 rounded-md">Sign Up</li>
+            </ul>
+        </section>
+    </nav>
+    <main></main>
+    <footer></footer>
+
+    <!-- Feather Fonts Script -->
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
