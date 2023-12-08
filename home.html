@@ -18,28 +18,76 @@
     </style>
 </head>
 <body>
-    <nav class="bg-[#00000033] flex flex-row h-16">
-        <section class="flex flex-row flex-1 items-center justify-center">
+    <!-- navbar -->
+    <nav class="bg-[#00000033] flex flex-row w-screen h-16 fixed">
+        <section class="flex flex-row flex-1 items-center justify-start ml-28">
             <ul class="flex flex-row gap-16">
                 <li class="flex flex-row"><a class="flex flex-row gap-3" href="">
                     <div><img src="./assets/icon/coffee-white-icon.svg" alt=""></div>
                     <span style="font-family: 'Sacramento', Arial, Helvetica, sans-serif; " class="text-white text-lg">Coffee Shop</span>
                 </a></li>
-                <li class="text-white text-sm">Home</li>
-                <li class="text-white text-sm">Product</li>
+                <li class="flex text-white text-sm items-center hover:border-b-2 hover:border-b-orange-500"><a href="">Home</a></li>
+                <li class="flex text-white text-sm items-center hover:border-b-2 hover:border-b-orange-500"><a href="">Product</a></li>
             </ul>
         </section>
-        <section class="flex flex-row flex-1 items-center justify-center">
+        <section class="flex flex-row flex-1 items-center justify-end mr-28">
             <ul class="flex flex-row gap-6 items-center">
-                <li><i class="text-white" data-feather="search"></i></li>
-                <li><i class="text-white" data-feather="shopping-cart"></i></li>
-                <li class="text-white text-sm px-5 py-3 box-border border border-white rounded-md">Sign In</li>
-                <li class="text-black text-sm px-5 py-3 box-border border border-orange-500 bg-orange-500 rounded-md">Sign Up</li>
+                <li><a href=""><i class="text-white" data-feather="search"></i></a></li>
+                <li><a href=""><i class="text-white" data-feather="shopping-cart"></i></a></li>
+                <li class="text-white text-sm px-5 py-3 box-border border border-white rounded-md hover:opacity-90 active:scale-95 transition:all duration-300 cursor-pointer"><a href="">Sign In</a></li>
+                <li class="text-black text-sm px-5 py-3 box-border border border-orange-500 bg-orange-500 rounded-md hover:opacity-90 active:scale-95 transition:all duration-300 cursor-pointer"><a href="">Sign Up</a></li>
             </ul>
         </section>
     </nav>
-    <main></main>
-    <footer></footer>
+
+    <!-- main -->
+    <main class="flex flex-row w-screen">
+        <div class="flex flex-1 h-screen">
+            <div class="flex-1"></div>
+            <div class="bg-[url(assets/bg-home-sec1.jpg)] flex-1 bg-center bg-cover"></div>
+        </div>
+    </main>
+
+    <!-- bubble chat -->
+    <div class="flex justify-center items-center fixed bg-orange-500 bottom-10 right-14 w-16 h-16 rounded-full hover:opacity-90 active:scale-95 transition:all duration-300 cursor-pointer">
+        <a class="flex flex-1 h-full w-full justify-center items-center" href=""><i class="flex-1 h-10" data-feather="message-circle"></i></a>
+    </div>
+    
+    <!-- footer -->
+    <footer class="flex flex-row bg-slate-100 py-20 px-40 gap-32">
+        <div class="flex flex-col flex-1 gap-4 self-end">
+            <figure class="flex flex-row gap-2 mb-5">
+                <img src="./assets/icon/coffee-shop-icon.svg" alt="">
+                <figcaption style="font-family: Sacramento;" class="text-yellow-900 text-lg">Coffee Shop</figcaption>
+            </figure>
+            <p class="text-gray-600">Coffee Shop is a store that sells some good meals, and especially coffee. We provide high quality beans</p>
+            <span class="text-xs text-gray-400">@2020CoffeeStore</span>
+        </div>
+        <ul class="flex flex-col gap-4 w-fit">
+            <li class="font-semibold">Product</li>
+            <li><a class="text-gray-600" href="">Our Product</a></li>
+            <li><a class="text-gray-600" href="">Pricing</a></li>
+            <li><a class="text-gray-600" href="">Locations</a></li>
+            <li><a class="text-gray-600" href="">Countries</a></li>
+            <li><a class="text-gray-600" href="">Blog</a></li>
+        </ul>
+        <ul class="flex flex-col w-fit gap-4">
+            <li class="font-semibold">Engage</li>
+            <li><a class="text-gray-600" href="">Partner</a></li>
+            <li><a class="text-gray-600" href="">FAQ</a></li>
+            <li><a class="text-gray-600" href="">About Us</a></li>
+            <li><a class="text-gray-600" href="">Privacy Policy</a></li>
+            <li><a class="text-gray-600" href="">Terms of Service</a></li>
+        </ul>
+        <div class="flex flex-col w-fit gap-4">
+            <span class="font-semibold">Social Media</span>
+            <div class="flex flex-row gap-4">
+                <div><a href=""><img src="./assets/icon/facebook-icon-2.svg" alt=""></a></div>
+                <div><a href=""><img src="./assets/icon/twitter-icon.svg" alt=""></a></div>
+                <div><a href=""><img src="./assets/icon/instagram-icon.svg" alt=""></a></div>
+            </div>
+        </div>
+    </footer>
 
     <!-- Feather Fonts Script -->
     <script>
