@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Order</title>
+    <!-- Tailwind CSS-Framework -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;600;800&family=Sacramento&display=swap" rel="stylesheet">
+    <style>
+        * {font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif;}
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="bg-black flex flex-row w-screen h-16">
+        <section class="flex flex-row flex-1 items-center justify-start ml-28">
+            <ul class="flex flex-row gap-16">
+                <li class="flex flex-row"><a class="flex flex-row gap-3" href="">
+                    <div><img src="./assets/icon/coffee-white-icon.svg" alt=""></div>
+                    <span style="font-family: 'Sacramento', Arial, Helvetica, sans-serif; " class="text-white text-lg">Coffee Shop</span>
+                </a></li>
+                <li class="flex text-white text-sm items-center hover:border-b-2 hover:border-b-orange-500"><a href="home.html">Home</a></li>
+                <li class="flex text-white text-sm items-center hover:border-b-2 hover:border-b-orange-500"><a href="product.html">Product</a></li>
+            </ul>
+        </section>
+        <section class="flex flex-row flex-1 items-center justify-end mr-28">
+            <ul class="flex flex-row gap-6 items-center">
+                <li class="hover:border-b-2 hover:border-b-orange-500 hover:pb-1.5"><a href=""><i class="text-white" data-feather="search"></i></a></li>
+                <li class="hover:border-b-2 hover:border-b-orange-500 hover:pb-1.5"><a href=""><i class="text-white" data-feather="shopping-cart"></i></a></li>
+                <li class="text-white text-xs px-5 py-2 box-border border border-white rounded-md hover:opacity-90 active:scale-95 transition:all duration-300 cursor-pointer"><a href="login.html">Sign In</a></li>
+                <li class="text-black text-xs px-5 py-2 box-border border border-orange-500 bg-orange-500 rounded-md hover:opacity-90 active:scale-95 transition:all duration-300 cursor-pointer"><a href="register.html">Sign Up</a></li>
+            </ul>
+        </section>
+    </nav>
+    <!-- /navbar -->
+
+    <!-- main -->
+    <main class="flex flex-col h-fit px-24 mb-16">
+        <h1 class="text-4xl font-medium text-gray-900 tracking-wide pt-10">Order <span class="font-bold">#12345-09893</span></h1>
+        <span class="text-sm text-gray-500 pt-2 pb-10">21 March 2023 at 10.30 AM</span>
+        <!-- column-1 -->
+        <div class="flex flex-1 h-fit flex-row-reverse gap-3">
+            <div class="flex flex-col flex-1 gap-4">
+                <div class="flex flex-row justify-between items-center">
+                    <span class="text-xl font-semibold tracking-wide">Your Order</span>
+                </div>
+                <!-- product-card-1 -->
+                <div class="flex flex-row h-fit bg-gray-100 gap-5">
+                    <div class="flex bg-[url(assets/fav-img-4.jpg)] h-48 aspect-square bg-cover bg-center"></div>
+                    <div class="flex flex-col flex-1 self-center gap-3">
+                        <span class="w-fit text-xs text-white font-semibold bg-red-700 px-2 py-1 rounded-full">FLASH SALE!</span>
+                        <span class="font-semibold tracking-wide">Hazelnut Latte</span>
+                        <div class="flex flex-row items-center gap-2 divide-x-2 divide-gray-300">
+                            <span class="text-sm text-gray-600">2pcs</span>
+                            <span class="text-sm text-gray-600 pl-2">Regular</span>
+                            <span class="text-sm text-gray-600 pl-2">Ice</span>
+                            <span class="text-sm text-gray-600 pl-2">Dine In</span>
+                        </div>
+                        <div class="flex flex-row gap-3 items-center">
+                            <span class="self-center text-xs text-red-700"><del>IDR 40.000</del></span>
+                            <span class="text-base text-orange-500">IDR 20.000</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- product-card-1 -->
+                <div class="flex flex-row h-fit bg-gray-100 gap-5">
+                    <div class="flex bg-[url(assets/fav-img-4.jpg)] h-48 aspect-square bg-cover bg-center"></div>
+                    <div class="flex flex-col flex-1 self-center gap-3">
+                        <span class="w-fit text-xs text-white font-semibold bg-red-700 px-2 py-1 rounded-full">FLASH SALE!</span>
+                        <span class="font-semibold tracking-wide">Hazelnut Latte</span>
+                        <div class="flex flex-row items-center gap-2 divide-x-2 divide-gray-300">
+                            <span class="text-sm text-gray-600">2pcs</span>
+                            <span class="text-sm text-gray-600 pl-2">Regular</span>
+                            <span class="text-sm text-gray-600 pl-2">Ice</span>
+                            <span class="text-sm text-gray-600 pl-2">Dine In</span>
+                        </div>
+                        <div class="flex flex-row gap-3 items-center">
+                            <span class="self-center text-xs text-red-700"><del>IDR 40.000</del></span>
+                            <span class="text-base text-orange-500">IDR 20.000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col flex-1 gap-4">
+                <span class="text-xl font-semibold tracking-wide">Order Information</span>
+
+                <div class="flex flex-col w-full">
+                    <div class="flex flex-col p-3 gap-5">
+                        <div class="flex flex-row justify-between">
+                            <div class="flex flex-row gap-2">
+                                <div><i data-feather="user"></i></div>
+                                <span class="font-medium text-gray-800">Full Name</span>
+                            </div>
+                            <span class="font-semibold">Ghaluh Wizard Anggoro</span>
+                        </div>
+                        <hr>
+                        <div class="flex flex-row justify-between">
+                            <div class="flex flex-row gap-2">
+                                <div><i data-feather="map-pin"></i></div>
+                                <span class="font-medium text-gray-800">Address</span>
+                            </div>
+                            <span class="font-semibold">Griya Bandung indah</span>
+                        </div>
+                        <hr>
+                        <div class="flex flex-row justify-between">
+                            <div class="flex flex-row gap-2">
+                                <div><i data-feather="phone-call"></i></div>
+                                <span class="font-medium text-gray-800">Phone</span>
+                            </div>
+                            <span class="font-semibold">082116304338</span>
+                        </div>
+                        <hr>
+                        <div class="flex flex-row justify-between">
+                            <div class="flex flex-row gap-2">
+                                <div><i data-feather="credit-card"></i></div>
+                                <span class="font-medium text-gray-800">Payment Method</span>
+                            </div>
+                            <span class="font-semibold">Cash</span>
+                        </div>
+                        <hr>
+                        <div class="flex flex-row justify-between">
+                            <div class="flex flex-row gap-2">
+                                <div><i data-feather="truck"></i></div>
+                                <span class="font-medium text-gray-800">Shipping</span>
+                            </div>
+                            <span class="font-semibold">Dine In</span>
+                        </div>
+                        <hr>
+                        <div class="flex flex-row justify-between">
+                            <div class="flex flex-row gap-2">
+                                <div><i data-feather="loader"></i></div>
+                                <span class="font-medium text-gray-800">Status</span>
+                            </div>
+                            <span class="text-sm font-semibold bg-green-100 text-green-600 px-3 py-1 box-border rounded-full">Done</span>
+                        </div>
+                        <hr>
+                        <div class="flex flex-row justify-between">
+                            <span class="font-medium text-gray-800">Total Transaksi</span>
+                            <span class="font-semibold text-orange-500">IDR 40.000</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- /main -->
+
+
+    <!-- bubble chat -->
+    <div class="flex justify-center items-center fixed bg-orange-500 bottom-10 right-14 w-16 h-16 rounded-full hover:opacity-90 active:scale-95 transition:all duration-300 cursor-pointer">
+        <a class="flex flex-1 h-full w-full justify-center items-center" href=""><i class="flex-1 h-10" data-feather="message-circle"></i></a>
+    </div>
+    <!-- /bubble chat -->
+
+    <!-- footer -->
+    <footer class="flex flex-row bg-slate-50 py-20 px-40 gap-32 w-screen">
+        <div class="flex flex-col flex-1 gap-8 self-end">
+            <figure class="flex flex-row gap-2 mb-4">
+                <img src="./assets/icon/coffee-shop-icon.svg" alt="">
+                <figcaption style="font-family: Sacramento;" class="text-yellow-900 text-lg">Coffee Shop</figcaption>
+            </figure>
+            <p class="text-gray-600">Coffee Shop is a store that sells some good meals, and especially coffee. We provide high quality beans</p>
+            <span class="text-xs text-gray-400">@2020CoffeeStore</span>
+        </div>
+        <ul class="flex flex-col gap-4 w-fit">
+            <li class="font-semibold text-gray-900">Product</li>
+            <li><a class="text-gray-600 text-sm hover:text-orange-500" href="product.html">Our Product</a></li>
+            <li><a class="text-gray-600 text-sm hover:text-orange-500" href="">Pricing</a></li>
+            <li><a class="text-gray-600 text-sm hover:text-orange-500" href="">Locations</a></li>
+            <li><a class="text-gray-600 text-sm hover:text-orange-500" href="">Countries</a></li>
+            <li><a class="text-gray-600 text-sm hover:text-orange-500" href="">Blog</a></li>
+        </ul>
+        <ul class="flex flex-col w-fit gap-4">
+            <li class="font-semibold text-gray-900">Engage</li>
+            <li><a class="text-gray-600 text-sm hover:text-orange-500" href="">Partner</a></li>
+            <li><a class="text-gray-600 text-sm hover:text-orange-500" href="">FAQ</a></li>
+            <li><a class="text-gray-600 text-sm hover:text-orange-500" href="">About Us</a></li>
+            <li><a class="text-gray-600 text-sm hover:text-orange-500" href="">Privacy Policy</a></li>
+            <li><a class="text-gray-600 text-sm hover:text-orange-500" href="">Terms of Service</a></li>
+        </ul>
+        <div class="flex flex-col w-fit gap-5">
+            <span class="font-semibold text-gray-900">Social Media</span>
+            <div class="flex flex-row gap-4">
+                <div class="flex justify-center items-center bg-orange-500 w-9 h-9 rounded-full hover:opacity-90 active:scale-95 transition:all duration-300 cursor-pointer hover:grayscale"><a href=""><i class="fa-brands fa-facebook-f"></i></a></div>
+                <div class="flex justify-center items-center bg-orange-500 w-9 h-9 rounded-full hover:opacity-90 active:scale-95 transition:all duration-300 cursor-pointer hover:grayscale"><a href=""><i class="fa-brands fa-twitter"></i></a></div>
+                <div class="flex justify-center items-center bg-orange-500 w-9 h-9 rounded-full hover:opacity-90 active:scale-95 transition:all duration-300 cursor-pointer hover:grayscale"><a href=""><i class="fa-brands fa-instagram text-xl text-center"></i></a></div>
+            </div>
+        </div>
+    </footer>
+    <!-- /footer -->  
+    
+    <!-- Feather Fonts Script -->
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
